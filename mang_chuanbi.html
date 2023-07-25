@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    /* Khái niệm: -Mảng (Array) là một tập hợp tuần tự các phần tử có cùng kiểu
+    dữ liệu và các phần tử được lưu trữ trong một dãy các ô nhớ liên tục trên
+    bộ nhớ. Các phần tử của mảng được truy cập bằng cách sử dụng “chỉ số”.
+    Mảng có kích thước N sẽ có chỉ số từ 0 tới N – 1. <br>
+
+    Cú pháp: <kiểu dữ liệu> <tên mảng>[<số lượng phần tử>]
+    Trong đó: Kiểu dữ liệu: chỉ định kiểu dữ liệu của các phần tử trong mảng;
+    là số nguyên, số thực, ký tự hay là kiểu dữ liệu nào đó. Tên mảng: là tên
+    gọi của biến mảng. <br>
+
+    Phần tử mảng: -Mảng là một tập hợp các phần tử cố định có cùng một kiểu,
+    được lưu trữ liên tiếp nhau trong các ô nhớ. <br>
+
+    Độ dài mảng: -Là số lượng giá trị mà mảng có thể chứa. <br>
+
+    Sử dụng for để duyệt mảng: <br>
+    let pref = ["Ha Noi", "Thanh Hoa", "Nam Dinh"]; <br>
+    for ( i = 0; i < pref.length; i++) { <br>
+    console.log(pref[i]); <br>
+    } <br>
+
+    Các bước để thêm phần tử vào mảng:<br>
+    B1: Nhập vào vị trí index và phần tử cần thêm vào mảng<br>
+    B2: Kiểm tra mảng đã đầy chưa, nếu đã đầy thì không thể thêm phần tử<br>
+    B3: Nếu địa chỉ bằng 0 thì thêm vào đầu, nếu địa chỉ bằng N thì thêm vào cuối (N ở đây là số lượng phần tử)<br>
+    B4: Dịch chuyển mảng từ vị trí cần thêm về bên trái 1 đơn vị<br>
+    B5: Sau khi đã dịch chuyển đến vị trí cần thêm, thực hiện thêm phần tử đó vào<br>
+    B6: Tăng kích thước mảng lên 1 đơn vị<br>
+    VD: int main(){<br>
+    int a[10] = {11,22,33,44,55,66,77,88,99,10};<br>
+    }
+
+    Cách sắp xếp mảng:<br>
+    Ta sẽ sử dụng phương thức sort() để sắp xếp các phần tử của mảng theo thứ tự tăng dần hoặc giảm dần. Nó sẽ làm thay đổi mảng ban đầu của chúng ta. Cú pháp của phương thức này là:
+    arr.sort();<br>
+    arr.sort(compareFunction);<br>
+
+    Thay một phần tử trong mảng: -Sử dụng .fill()<br>
+    VD:<br>
+    const items = ['a', 'b', 'c', 'd', 'e', 'f']<br>
+    console.log(items.fill('--NEW-ITEM--', 2, 3))<br>
+</p>
+</body>
+</html>
